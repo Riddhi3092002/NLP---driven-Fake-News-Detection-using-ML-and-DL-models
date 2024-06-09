@@ -2,8 +2,8 @@
   This repository contains the code and report for the Fake News Detection project.
 
 # Project Files
-  'Fake News Detection.ipynb': Jupyter notebook containing the complete code for the project.
-  'FakeNewsDetectionProjectReport'.pdf: Detailed project report including methodology, results, and conclusions.
+   i. 'Fake News Detection.ipynb': Jupyter notebook containing the complete code for the project.
+  ii. 'FakeNewsDetectionProjectReport'.pdf: Detailed project report including methodology, results, and conclusions.
 
 # Project Overview
   This project aims to create a robust system for detecting false news using machine learning (ML) and deep learning (DL) approaches. 
