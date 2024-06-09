@@ -2,16 +2,16 @@
   This repository contains the code and report for the Fake News Detection project.
 
 # Project Files
-   i. 'Fake News Detection.ipynb': Jupyter notebook containing the complete code for the project.
-  ii. 'FakeNewsDetectionProjectReport'.pdf: Detailed project report including methodology, results, and conclusions.
+   1. 'Fake News Detection.ipynb': Jupyter notebook containing the complete code for the project.
+   2. 'FakeNewsDetectionProjectReport'.pdf: Detailed project report including methodology, results, and conclusions.
 
 # Project Overview
   This project aims to create a robust system for detecting false news using machine learning (ML) and deep learning (DL) approaches. 
 
   1. Dataset Used : ISOT dataset containing a fair mix of factual and false news stories taken from credible news providers and identified fake news sites.
   2. Data Preprocessing:
-       i. Removing punctuation and stopwords
-      ii. Tokenization and lowercasing of text data
+       - Removing punctuation and stopwords
+       - Tokenization and lowercasing of text data
   3. Feature Extraction:
        i. TF-IDF Vectorization
       ii. GloVe word Embeddings
