@@ -15,8 +15,8 @@
     - Tokenization and lowercasing of text data
   
   ### 2. Feature Extraction:
-       - TF-IDF Vectorization
-       - GloVe word Embeddings
+  - TF-IDF Vectorization
+  - GloVe word Embeddings
 
   ### 3. Models Trained:
   - **Machine Learning Models**:
