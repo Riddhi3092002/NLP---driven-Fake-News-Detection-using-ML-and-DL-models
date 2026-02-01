@@ -1,43 +1,49 @@
-# NLP - driven Fake News Detection using Machine Learning and Deep Learning Models
-  This repository contains the code and report for the Fake News Detection project.
+# NLP-Driven Fake News Detection
 
-## Project Files
-   - `Fake News Detection.ipynb`: Jupyter notebook containing the complete code for the project.
-   - `FakeNewsDetectionProjectReport.pdf`: Detailed project report including methodology, results, and conclusions.
+This project implements a robust system to combat digital disinformation by classifying news articles as either True or Fake using various Machine Learning (ML) and Deep Learning (DL) architectures.
 
 ## Project Overview
-  This project aims to create a robust system for detecting false news using machine learning (ML) and deep learning (DL) approaches. 
+The rise of false news in digital media contributes to societal divide and disinformation. This project explores the effectiveness of multiple algorithms—ranging from traditional statistical models to advanced recurrent neural networks—to identify complicated language patterns and contextual clues in text.
 
-  ### 1. Data Preprocessing
-  - **Dataset Used**: ISOT dataset containing a fair mix of factual and false news stories taken from credible news providers and identified fake news sites.
-  - **Preprocessing Steps**:
-    - Removing punctuation and stopwords
-    - Tokenization and lowercasing of text data
-  
-  ### 2. Feature Extraction:
-  - TF-IDF Vectorization
-  - GloVe word Embeddings
+## Project Files
+- `Fake News Detection.ipynb`: Jupyter notebook containing the complete code for the project.
+- `FakeNewsDetectionProjectReport.pdf`: Detailed project report including methodology, results, and conclusions.
 
-  ### 3. Models Trained:
-  - **Machine Learning Models**:
-    - Logistic Regression
-    - Support Vector Machine (SVM)
-    - Random Forest
-    - Multinomial Naive Bayes
-  - **Deep Learning Models**:
-    - Simple Neural Network
-    - LSTM (Long Short-Term Memory)
-    - Bidirectional LSTM
-    - CNN-LSTM (Convolutional Neural Network - LSTM)
-    - GRU (Gated Recurrent Unit)
+## Dataset: ISOT News Dataset
+The models were trained and evaluated using the ISOT Dataset, which contains over 44,000 articles:
+- **True News**: Articles sourced from Reuters.com, a well-known provider noted for accurate reporting.
+- **Fake News**: Gathered from untrustworthy sources identified by Politifact and Wikipedia.
+- **Data Points**: Includes article title, full text, subject, and publication date.
 
-  ### 4. Evaluation Metrics
-  - Accuracy
-  - Precision
-  - Recall
-  - F1 Score
-      
-## Results
-The models were evaluated on their ability to classify news articles as real or fake. The evaluation metrics for each model are provided in the project report.
-  
+## Technical Implementation
 
+### Preprocessing & Feature Extraction
+To prepare the textual data for the models, a rigorous preprocessing pipeline was implemented:
+- **Text Cleaning**: Lowercasing, punctuation removal, and NLTK-based stopword removal.
+- **ML Features**: TF-IDF Vectorization, limited to the top 5,000 frequent terms to reduce noise and improve efficiency.
+- **DL Features**: Tokenization, padding to a fixed length of 100 tokens, and pre-trained GloVe word embeddings to capture semantic relationships.
+
+### Models Evaluated
+The research involved training and comparing nine different architectures:
+
+| Machine Learning Models | Deep Learning Models |
+| :--- | :--- |
+| Logistic Regression | Simple Neural Network |
+| Support Vector Machine (SVM) | Long Short-Term Memory (LSTM) |
+| Random Forest | Bidirectional LSTM |
+| Multinomial Naïve Bayes | CNN-LSTM Hybrid |
+| | Gated Recurrent Unit (GRU) |
+
+## Performance Results
+The models were evaluated on Accuracy, Precision, Recall, and F1-Score.
+
+
+### Top Performers
+- **Best ML Model**: Support Vector Machine (SVM) achieved the highest overall accuracy of 99.30%.
+- **Highest F1-Score**: Random Forest led with a score of 0.9973, showing a strong balance between precision and recall.
+- **Best DL Model**: GRU outperformed other neural networks with 98.86% accuracy and 0.9892 F1-score.
+
+## Future Work
+- Integrate transformer-based architectures such as BERT for improved contextual understanding.
+- Expand the system to handle multi-modal data, including images and videos that accompany news stories.
+- Implement a real-time news monitoring system to flag disinformation as it is published.
