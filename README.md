@@ -3,7 +3,7 @@
 This project implements a robust system to combat digital disinformation by classifying news articles as either True or Fake using various Machine Learning (ML) and Deep Learning (DL) architectures.
 
 ## Project Overview
-The rise of false news in digital media contributes to societal divide and disinformation. This project explores the effectiveness of multiple algorithms—ranging from traditional statistical models to advanced recurrent neural networks—to identify complicated language patterns and contextual clues in text.
+The rise of false news in digital media contributes to societal divide and disinformation. This project explores the effectiveness of multiple algorithms, ranging from traditional statistical models to advanced recurrent neural networks, to identify complicated language patterns and contextual clues in text.
 
 ## Project Files
 - `Fake News Detection.ipynb`: Jupyter notebook containing the complete code for the project.
